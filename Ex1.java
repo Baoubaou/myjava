@@ -14,12 +14,14 @@ public class Ex1 {
     static String ChooseFname(){
         System.out.println("Entrez votre prénom:");
         String choice=input.nextLine();
+        choice = choice.substring(0, 1).toUpperCase() + choice.substring(1).toLowerCase();
         return choice;
     }
     
     static String ChooseLname(){
         System.out.println("Entrez votre nom:");
         String choice=input.nextLine();
+        choice = choice.substring(0, 1).toUpperCase() + choice.substring(1).toLowerCase();
         return choice;
     }
 
